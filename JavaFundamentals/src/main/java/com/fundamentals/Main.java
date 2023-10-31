@@ -2,6 +2,7 @@ package com.fundamentals;
 
 import com.fundamentals.lessons.Lesson4;
 import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.Lesson6;
 
 
 public class Main {
@@ -13,7 +14,24 @@ public class Main {
         // basicStatements();
         // lesson4Example();
         lesson5Example();
+        lesson6Example();
     }
+public static void lesson6Example() {
+    Lesson6 myLesson6 = new Lesson6();
+    myLesson6.demoArithmetic();
+    myLesson6.demoModulus(3);
+    myLesson6.demoMathOrder();
+    //myLesson6.demoScanner();
+    myLesson6.demoAssignment(5, 7);
+    myLesson6.demoRealationalEquals(12, 13);
+    myLesson6.demoRelationalGreater(34, 42);
+    myLesson6.demoEquals();
+    myLesson6.demoLocicalAnd(10,11,12);
+    myLesson6.demoLogicalOr(13,14,15);
+    myLesson6.demoIncrement();
+    myLesson6.demoDecrement();
+
+}
 
     public static void lesson5Example() {
     Lesson5 myLesson5 = new Lesson5();
