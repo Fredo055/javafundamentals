@@ -1,8 +1,10 @@
 package com.fundamentals;
 
+import com.fundamentals.labs.StringsLab;
 import com.fundamentals.lessons.Lesson4;
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.lessons.Lesson6;
+import com.fundamentals.lessons.Lesson7;
 
 
 public class Main {
@@ -15,7 +17,19 @@ public class Main {
         // lesson4Example();
         lesson5Example();
         lesson6Example();
+        lesson7Example();
+
     }
+    public static void lesson7Example() {
+        Lesson7 myLesson7 = new Lesson7();
+        myLesson7.demoIfStatement(13, 12);
+        myLesson7.demoIfElse("baseball", "baseball");
+       String result = myLesson7.demoIfElseChain(48);
+        System.out.println(result);
+        myLesson7.demoIfAndOr(22);
+        myLesson7.demoSwitch(30);
+    }
+
 public static void lesson6Example() {
     Lesson6 myLesson6 = new Lesson6();
     myLesson6.demoArithmetic();
@@ -56,6 +70,7 @@ public static void lesson6Example() {
         myLesson.demoChar();
         String myEscape = myLesson.demoEscapeSequence();
         System.out.println(myEscape);
+
     }
 
 
