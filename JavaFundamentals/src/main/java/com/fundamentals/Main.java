@@ -1,10 +1,8 @@
 package com.fundamentals;
 
 import com.fundamentals.labs.StringsLab;
-import com.fundamentals.lessons.Lesson4;
-import com.fundamentals.lessons.Lesson5;
-import com.fundamentals.lessons.Lesson6;
-import com.fundamentals.lessons.Lesson7;
+import com.fundamentals.lessons.*;
+import com.fundamentals.practice.BottlesOfBeer;
 
 
 public class Main {
@@ -18,15 +16,36 @@ public class Main {
         lesson5Example();
         lesson6Example();
         lesson7Example();
+        lesson8Example();
+        exampleBeer();
+
 
     }
+    public static void exampleBeer() {
+        BottlesOfBeer beer = new BottlesOfBeer();
+        beer.beersong();
+
+}
+
+
+    public static void lesson8Example() {
+        Lesson8 myLesson8 = new Lesson8();
+        myLesson8.demoWhileLoop(15);
+        myLesson8.demoCountdown();
+        myLesson8.demoDoWhileLoop();
+        myLesson8.demoForloop(12);
+        myLesson8.demoMultiLoop(4, 6);
+        myLesson8.demoBranching();
+    }
+
+
     public static void lesson7Example() {
         Lesson7 myLesson7 = new Lesson7();
         myLesson7.demoIfStatement(13, 12);
         myLesson7.demoIfElse("baseball", "baseball");
        String result = myLesson7.demoIfElseChain(48);
         System.out.println(result);
-        myLesson7.demoIfAndOr(22);
+        myLesson7.demoIfAndOr(12);
         myLesson7.demoSwitch(30);
     }
 
