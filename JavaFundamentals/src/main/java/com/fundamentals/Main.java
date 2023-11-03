@@ -1,8 +1,10 @@
 package com.fundamentals;
 
+import com.fundamentals.labs.NumbersLab;
 import com.fundamentals.labs.StringsLab;
 import com.fundamentals.lessons.*;
 import com.fundamentals.practice.BottlesOfBeer;
+import com.fundamentals.practice.Week3;
 
 
 public class Main {
@@ -13,14 +15,49 @@ public class Main {
         // houseReference();
         // basicStatements();
         // lesson4Example();
-        lesson5Example();
-        lesson6Example();
-        lesson7Example();
-        lesson8Example();
-        exampleBeer();
-
+        //lesson5Example();
+        //lesson6Example();
+       // lesson7Example();
+       // lesson8Example();
+        //exampleBeer();
+       // StringsLabExcercise();
+        // practiceWeek3();
+        NumbersLab();
 
     }
+     public static void NumbersLab() {
+        NumbersLab myNumbersLab = new NumbersLab();
+        myNumbersLab.myExampleOne();
+        myNumbersLab.myExampletwo();
+        myNumbersLab.ExampleThree();
+
+     }
+
+
+
+
+
+    public static void practiceWeek3() {
+        Week3 week3 =  new Week3();
+        String day = week3.dayOfWeek('w');
+        System.out.println(day);
+       // week3.stringLoop();
+        week3.solveProblem();
+        week3.loopPrimes();
+    }
+
+    public static void StringsLabExcercise() {
+        StringsLab myStringsLab = new StringsLab();
+        myStringsLab.demoLowercase();
+        System.out.println(myStringsLab.demoLength());
+
+        String HelloworldtwoString = myStringsLab.Helloworldtwo();
+        System.out.println(HelloworldtwoString);
+    }
+
+
+
+
     public static void exampleBeer() {
         BottlesOfBeer beer = new BottlesOfBeer();
         beer.beersong();
