@@ -8,23 +8,37 @@ import com.fundamentals.practice.Week3;
 
 
 public class Main {
-
     public static void main(String[] args) {
         // System.out.println("Hello Java!");
         // houseExample();
         // houseReference();
         // basicStatements();
         // lesson4Example();
-        //lesson5Example();
-        //lesson6Example();
-       // lesson7Example();
-       // lesson8Example();
-        //exampleBeer();
-       // StringsLabExcercise();
+        // lesson5Example();
+        // lesson6Example();
+        // lesson7Example();
+        // lesson8Example();
+        // exampleBeer();
+        // StringsLabExcercise();
         // practiceWeek3();
-        NumbersLab();
-
+        // NumbersLab();
+        // lesson9Example();
+        StringsLabExcercise();
     }
+
+    public static void lesson9Example() {
+        Lesson9 myLesson9 = new Lesson9();
+        // myLesson9.demoIntArray();
+        myLesson9.demoStringsArray();
+        myLesson9.demoEnhanceFor();
+        System.out.println();
+        myLesson9.demoTwoDimensions();
+        System.out.println();
+        myLesson9.demoThreeDimensions();
+        System.out.println();
+        myLesson9.demoJaggedArray();
+    }
+
      public static void NumbersLab() {
         NumbersLab myNumbersLab = new NumbersLab();
         myNumbersLab.myExampleOne();
@@ -48,10 +62,8 @@ public class Main {
 
     public static void StringsLabExcercise() {
         StringsLab myStringsLab = new StringsLab();
-        myStringsLab.demoLowercase();
-        System.out.println(myStringsLab.demoLength());
-
-        String HelloworldtwoString = myStringsLab.Helloworldtwo();
+       myStringsLab.Helloworld("Strings are a bit tricky");
+       String HelloworldtwoString = myStringsLab.Helloworldtwo();
         System.out.println(HelloworldtwoString);
     }
 
